@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <div class="login-section ion-padding">
+      <div class="heading ion-padding">
+        <h1>WELCOME USER</h1>
+        <p>Sign in to continue</p>
+      </div>
+      <div class="login-form ng-padding">
+        <div class="form-input">
+            <ion-item>
+          <ion-input id="email" placeholder="email" expand="block"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-item>
+          <ion-input id="password" placeholder="password" expand="block"></ion-input>
+        </ion-item>
+      </div>
+      <p>forgot password?<span routerLink= "reset" (click)="move()"> Click Here</span></p>
+      <ion-button expand="block" (click)="log ()" >Login</ion-button>
+      <ion-button expand="block" routerLink=" register " (click)="sign()">Register</ion-button>
+    </div>
+  </div>
+  </ion-content>
+
+</ion-content>
